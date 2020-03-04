@@ -1,6 +1,14 @@
 :host {
     display: block;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
     padding: 130px 160px;
+    scroll-snap-align: start;
+    height: 1080px;
 }
 
 .scroll {

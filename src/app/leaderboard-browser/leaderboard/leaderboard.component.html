@@ -1,0 +1,23 @@
+<h1>LEADERBOARDS</h1>
+<h2>{{ game?.name }}</h2>
+
+<table *ngIf="game">
+    <thead>
+        <tr>
+            <th class="rank">RANK</th>
+            <th>ArcadeNet USERNAME</th>
+            <th>INITIALS</th>
+            <th>SCORE</th>
+            <th class="date">DATE PLAYED</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ranking of game?.rankings">
+            <td class="rank bold">#{{ ranking.rank }}</td>
+            <td>{{ ranking.user_name }}</td>
+            <td> </td>
+            <td>{{ ranking.score }}</td>
+            <td class="date">{{ ranking.created_at }}</td>
+        </tr>
+    </tbody>
+</table>

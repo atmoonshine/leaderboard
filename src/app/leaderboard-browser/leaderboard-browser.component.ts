@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LeaderboardService } from '../core/leaderboard.service';
 import { tap } from 'rxjs/operators';
 import { trigger, transition, query, stagger, animateChild, style, animate } from '@angular/animations';
+import { Game } from '../shared/models/game';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
     selector: 'app-leaderboard-browser',
@@ -33,5 +35,11 @@ export class LeaderboardBrowserComponent {
         .get()
         .pipe(tap(() => setTimeout(() => (document.getElementsByTagName('button')[0] as HTMLElement)?.focus())));
 
+    selectedGame$ = new BehaviorSubject<Game | undefined>(undefined);
+
     constructor(private leaderboardService: LeaderboardService) {}
+
+    scrollToLeaderboard(game: Game) {
+        this.selectedGame$.next(game);
+    }
 }

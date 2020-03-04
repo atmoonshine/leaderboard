@@ -1,0 +1,65 @@
+h1 {
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -0.36px;
+    margin: 0;
+}
+
+h2 {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -0.22px;
+    margin: 0 0 30px 0;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    font-family: Lato;
+
+    tr {
+        height: 73px;
+
+        .rank {
+            padding-left: 23px;
+            text-align: left;
+
+            &.bold {
+                font-size: 36px;
+                line-height: 1.79;
+                letter-spacing: -0.22px;
+            }
+        }
+
+        .date {
+            padding-right: 23px;
+            text-align: right;
+        }
+    }
+
+    thead {
+        border-radius: 7px;
+        background-color: black;
+        font-size: 30px;
+        letter-spacing: -0.18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            background: #234a6a;
+        }
+        tr:nth-child(odd) {
+            background: #0b2836;
+        }
+
+        td {
+            font-size: 24px;
+            letter-spacing: -0.14px;
+            text-align: center;
+        }
+    }
+}
