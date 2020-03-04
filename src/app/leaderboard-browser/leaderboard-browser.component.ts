@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { LeaderboardService } from '../core/leaderboard.service';
-import { tap } from 'rxjs/operators';
+import { tap, shareReplay } from 'rxjs/operators';
 import { trigger, transition, query, stagger, animateChild, style, animate } from '@angular/animations';
 import { Game } from '../shared/models/game';
 import { BehaviorSubject } from 'rxjs';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 @Component({
     selector: 'app-leaderboard-browser',
@@ -31,9 +32,12 @@ import { BehaviorSubject } from 'rxjs';
     ]
 })
 export class LeaderboardBrowserComponent {
-    leaderboard$ = this.leaderboardService
-        .get()
-        .pipe(tap(() => setTimeout(() => (document.getElementsByTagName('button')[0] as HTMLElement)?.focus())));
+    @ViewChild('leaderboardSection') leaderboardSection?: ElementRef<HTMLDivElement>;
+
+    leaderboard$ = this.leaderboardService.get().pipe(
+        tap(() => setTimeout(() => (document.getElementsByTagName('button')[0] as HTMLElement)?.focus())),
+        shareReplay(1)
+    );
 
     selectedGame$ = new BehaviorSubject<Game | undefined>(undefined);
 
@@ -41,5 +45,7 @@ export class LeaderboardBrowserComponent {
 
     scrollToLeaderboard(game: Game) {
         this.selectedGame$.next(game);
+
+        this.leaderboardSection?.nativeElement.scrollIntoView({ behavior: 'smooth' });
     }
 }

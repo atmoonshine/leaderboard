@@ -9,7 +9,8 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { LeaderboardModule } from './leaderboard-browser/leaderboard.module';
 
-const routes: Routes = [{ path: '', pathMatch: 'full', redirectTo: 'leaderboard' }];
+// const routes: Routes = [{ path: '', pathMatch: 'full', redirectTo: 'leaderboard' }];
+const routes: Routes = [];
 
 @NgModule({
     declarations: [AppComponent],
