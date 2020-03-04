@@ -1,0 +1,69 @@
+:host {
+    display: block;
+    padding: 130px 160px;
+}
+
+.scroll {
+    overflow: auto;
+    white-space: nowrap;
+    height: 312px;
+
+    .game {
+        background: none;
+        outline: none;
+        border: none;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+
+        + .game {
+            margin-left: 40px;
+        }
+
+        img {
+            margin-bottom: 7px;
+            border-radius: 21px;
+            border: solid 4px transparent;
+            filter: brightness(50%);
+            transition: filter .5s;
+        }
+
+        .name {
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+            font-family: FuturaPT, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0.11px;
+        }
+
+        &:focus,
+        &:hover {
+            img {
+                border-color: white;
+                filter: brightness(100%);
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Lato';
+    letter-spacing: -0.36px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Lato';
+    letter-spacing: -0.22px;
+    font-weight: 400;
+}
+
+.down-arrow {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    bottom: 68px;
+}

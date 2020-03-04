@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap');
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+body {
+    margin: 0;
+    background: url('assets/images/background.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    overscroll-behavior: none;
+    overflow-y: hidden;
+    color: white;
+}
+
+a {
+    outline: none;
+}

@@ -1,0 +1,17 @@
+<h1>LEADERBOARDS</h1>
+<h2>PICK YOUR GAME</h2>
+<div class="scroll" @list>
+    <button @items class="game" *ngFor="let game of leaderboard$ | async">
+        <img [src]="game.boxart" height="236" width="193" >
+        <div class="name">{{ game.name }}</div>
+    </button>
+</div>
+<h2>CHOOSE A SEGMENT</h2>
+<div class="scroll" @list>
+    <button @items class="game" *ngFor="let game of leaderboard$ | async">
+        <img [src]="game.boxart" height="236" width="193" >
+        <div class="name">{{ game.name }}</div>
+    </button>
+</div>
+
+<img class="down-arrow" src="../../assets/images/chevron.svg">

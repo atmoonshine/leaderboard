@@ -1,0 +1,194 @@
+[
+    {
+        "game_id": 50008,
+        "type": "AtgLocalGame",
+        "internal_number": "413",
+        "name": "Fix-It Felix, Jr.",
+        "internal_name": null,
+        "boxart": "https://f5b8s5q2.ssl.hwcdn.net/arcade/prod/medias/boxarts/15/15_190w.jpg",
+        "boxart_480w": "https://f5b8s5q2.ssl.hwcdn.net/arcade/prod/medias/boxarts/15/15_480w.jpg",
+        "banner": null,
+        "snapshot": "2020-03-04T04:58:36Z",
+        "total_count": 192,
+        "rankings": [
+            {
+                "account": 441,
+                "user_name": "UltimateRaf",
+                "signature": "---",
+                "game_id": 50008,
+                "score": "288500.0",
+                "created_at": "2020-02-15T23:22:06.000Z",
+                "rank": 1,
+                "type1_rank": 1
+            },
+            {
+                "account": 1593,
+                "user_name": "MajesticOne_Nick",
+                "signature": "NAC",
+                "game_id": 50008,
+                "score": "281000.0",
+                "created_at": "2020-02-08T06:22:58.000Z",
+                "rank": 2,
+                "type1_rank": 2
+            },
+            {
+                "account": 2424,
+                "user_name": "QQ22QQ",
+                "signature": "YAY",
+                "game_id": 50008,
+                "score": "197600.0",
+                "created_at": "2020-02-09T08:49:00.000Z",
+                "rank": 3,
+                "type1_rank": 3
+            },
+            {
+                "account": 3517,
+                "user_name": "Throne101",
+                "signature": "RMB",
+                "game_id": 50008,
+                "score": "122800.0",
+                "created_at": "2020-02-09T18:47:48.000Z",
+                "rank": 4,
+                "type1_rank": 4
+            },
+            {
+                "account": 537,
+                "user_name": "daddy",
+                "signature": "DAD",
+                "game_id": 50008,
+                "score": "94300.0",
+                "created_at": "2020-02-13T22:04:18.000Z",
+                "rank": 5,
+                "type1_rank": 5
+            }
+        ]
+    },
+    {
+        "game_id": 50007,
+        "type": "AtgLocalGame",
+        "internal_number": "507",
+        "name": "Tetris®",
+        "internal_name": null,
+        "boxart": "https://f5b8s5q2.ssl.hwcdn.net/arcade/prod/medias/boxarts/14/14_190w.jpg",
+        "boxart_480w": "https://f5b8s5q2.ssl.hwcdn.net/arcade/prod/medias/boxarts/14/14_480w.jpg",
+        "banner": null,
+        "snapshot": "2020-03-04T04:58:36Z",
+        "total_count": 55,
+        "rankings": [
+            {
+                "account": 3103,
+                "user_name": "DONGATO_1980",
+                "signature": "RWM",
+                "game_id": 50007,
+                "score": "226473.0",
+                "created_at": "2020-01-26T13:51:54.000Z",
+                "rank": 1,
+                "type1_rank": 1
+            },
+            {
+                "account": 2424,
+                "user_name": "QQ22QQ",
+                "signature": "YAY",
+                "game_id": 50007,
+                "score": "124085.0",
+                "created_at": "2020-01-23T23:20:21.000Z",
+                "rank": 2,
+                "type1_rank": 2
+            },
+            {
+                "account": 1718,
+                "user_name": "Jay13",
+                "signature": "JAX",
+                "game_id": 50007,
+                "score": "115743.0",
+                "created_at": "2020-01-29T01:06:07.000Z",
+                "rank": 3,
+                "type1_rank": 3
+            },
+            {
+                "account": 1646,
+                "user_name": "ctm",
+                "signature": "YAO",
+                "game_id": 50007,
+                "score": "74555.0",
+                "created_at": "2020-02-04T03:49:04.000Z",
+                "rank": 4,
+                "type1_rank": 4
+            },
+            {
+                "account": 2247,
+                "user_name": "MajorLamont",
+                "signature": "YAA",
+                "game_id": 50007,
+                "score": "71695.0",
+                "created_at": "2020-01-05T17:16:50.000Z",
+                "rank": 5,
+                "type1_rank": 5
+            }
+        ]
+    },
+    {
+        "game_id": 50006,
+        "type": "AtgLocalGame",
+        "internal_number": "313",
+        "name": "BurgerTime™ (Arcade)",
+        "internal_name": null,
+        "boxart": "https://f5b8s5q2.ssl.hwcdn.net/arcade/prod/medias/boxarts/12/12_190w.png",
+        "boxart_480w": "https://f5b8s5q2.ssl.hwcdn.net/arcade/prod/medias/boxarts/12/12_480w.png",
+        "banner": null,
+        "snapshot": "2020-03-04T04:58:36Z",
+        "total_count": 335,
+        "rankings": [
+            {
+                "account": 1743,
+                "user_name": "Phyrgian Stank",
+                "signature": "��",
+                "game_id": 50006,
+                "score": "1458200.0",
+                "created_at": "2019-12-27T19:15:00.000Z",
+                "rank": 1,
+                "type1_rank": 1
+            },
+            {
+                "account": 309,
+                "user_name": "Home Arcade",
+                "signature": "",
+                "game_id": 50006,
+                "score": "1150821.0",
+                "created_at": "2020-01-03T02:23:55.000Z",
+                "rank": 2,
+                "type1_rank": 2
+            },
+            {
+                "account": 120,
+                "user_name": "@TGam3s",
+                "signature": "",
+                "game_id": 50006,
+                "score": "1140211.0",
+                "created_at": "2019-11-29T22:58:48.000Z",
+                "rank": 3,
+                "type1_rank": 3
+            },
+            {
+                "account": 2993,
+                "user_name": "nugentda",
+                "signature": "",
+                "game_id": 50006,
+                "score": "1133281.0",
+                "created_at": "2020-01-01T04:24:04.000Z",
+                "rank": 4,
+                "type1_rank": 4
+            },
+            {
+                "account": 2104,
+                "user_name": "Redninja814",
+                "signature": "",
+                "game_id": 50006,
+                "score": "1125721.0",
+                "created_at": "2019-12-30T12:47:27.000Z",
+                "rank": 5,
+                "type1_rank": 5
+            }
+        ]
+    }
+]
