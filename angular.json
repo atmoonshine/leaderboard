@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "ATGamesPicker": {
+        "ATGamesLeaderboard": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/ATGamesPicker",
+                        "outputPath": "dist/ATGamesLeaderboard",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "ATGamesPicker:build"
+                        "browserTarget": "ATGamesLeaderboard:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "ATGamesPicker:build:production"
+                            "browserTarget": "ATGamesLeaderboard:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "ATGamesPicker:build"
+                        "browserTarget": "ATGamesLeaderboard:build"
                     }
                 },
                 "test": {
@@ -98,29 +98,26 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "ATGamesPicker:serve"
+                        "devServerTarget": "ATGamesLeaderboard:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "ATGamesPicker:serve:production"
+                            "devServerTarget": "ATGamesLeaderboard:serve:production"
                         }
                     }
-                },
-                "azureLogout": {
-                    "builder": "@azure/ng-deploy:logout"
                 },
                 "deploy": {
                     "builder": "angular-cli-ghpages:deploy",
                     "options": {
-                        "baseHref": "https://atmoonshine.github.io/player-selection/",
-                        "name": "Player Selection"
+                        "baseHref": "https://atmoonshine.github.io/leaderboard/",
+                        "name": "Leaderboard"
                     }
                 }
             }
         }
     },
-    "defaultProject": "ATGamesPicker",
+    "defaultProject": "ATGamesLeaderboard",
     "cli": {
-        "analytics": "a7298fbc-982f-46ae-b578-3b37d8ed2aa5"
+        "analytics": "a7298fbc-982f-46ae-b578-3b37d7ed2aa5"
     }
 }
