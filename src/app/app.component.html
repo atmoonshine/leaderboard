@@ -1,41 +1,8 @@
 <div class="header">
-    <svg xmlns="http://www.w3.org/2000/svg" width="604" height="74" viewBox="0 0 604 74">
-        <g fill="none" fill-rule="evenodd">
-            <path stroke="#2771AC" stroke-opacity=".604" d="M572.37 55H31.63L-26.642-48h657.286L572.369 55z" />
-            <path fill="#000" stroke="#2771AC" stroke-opacity=".604" d="M530.887 73.5H73.113l-49.255-87h556.284l-49.255 87z" />
-            <g transform="translate(260 25)">
-                <g *ngIf="headerService.showASelect">
-                    <g>
-                        <circle cx="13" cy="13" r="13" fill="#A42F8F" />
-                        <text fill="#000" font-family="Lato-Black, Lato" font-size="22" font-weight="700">
-                            <tspan x="6" y="21">A</tspan>
-                        </text>
-                    </g>
-                    <text fill="#58A2DC" font-family="Lato-Black, Lato" font-size="18" font-weight="700">
-                        <tspan x="32" y="20">SELECT</tspan>
-                    </text>
-                </g>
-                <g *ngIf="headerService.showRewindBack">
-                    <g>
-                        <circle cx="13" cy="13" r="13" fill="#A42F8F" />
-                        <g transform="translate(2 3)">
-                            <defs>
-                                <path d="M5.47 7.27L10.93 4.53L10.93 10L10.93 15.47L5.47 12.73L0 10L5.47 7.27Z" id="b1ZEGcXZzp"></path>
-                                <path d="M13.26 7.27L18.73 4.53L18.73 10L18.73 15.47L13.26 12.73L7.8 10L13.26 7.27Z" id="b4v7Oe7G1D"></path>
-                            </defs>
-                            <g>
-                                <use xlink:href="#b1ZEGcXZzp" opacity="1" fill="#000000" fill-opacity="1"></use>
-                                <use xlink:href="#b4v7Oe7G1D" opacity="1" fill="#000000" fill-opacity="1"></use>
-                            </g>
-                        </g>
-                    </g>
-                    <text fill="#58A2DC" font-family="Lato-Black, Lato" font-size="18" font-weight="700">
-                        <tspan x="32" y="20">EXIT</tspan>
-                    </text>
-                </g>
-            </g>
-        </g>
-    </svg>
+    <div class="background">
+        <div class="button"><img src="../assets/images/a-button.png" /><span class="select">SELECT</span></div>
+        <div class="button"><img src="../assets/images/b-button.png" /><img class="arrow" src="../assets/images/arrow.png" />PAGE</div>
+    </div>
 </div>
 
 <router-outlet></router-outlet>

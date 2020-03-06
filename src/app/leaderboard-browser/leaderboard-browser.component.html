@@ -2,20 +2,20 @@
     <h1>LEADERBOARDS</h1>
     <h2>PICK YOUR GAME</h2>
     <div class="scroll" @list>
-        <button @items class="game" *ngFor="let game of leaderboard$ | async" [id]="'game' + game.game_id" (focus)="selectedGame$.next(game)" (click)="scrollToLeaderboard(game)">
-            <img [src]="game.boxart" height="236" width="193" />
+        <button @items class="game" *ngFor="let game of leaderboard$ | async" [id]="'game' + game.game_id" (focus)="onGameFocus(game, $event)" (keydown.a)="scrollToLeaderboard(game)" (click)="scrollToLeaderboard(game)">
+            <img [src]="game.boxart" />
             <div class="name">{{ game.name }}</div>
         </button>
     </div>
     <h2>CHOOSE A SEGMENT</h2>
     <div class="scroll" @list>
         <button @items class="game" *ngFor="let game of leaderboard$ | async" (focus)="selectedGame$.next(game)" (click)="scrollToLeaderboard(game)">
-            <img [src]="game.boxart" height="236" width="193" />
+            <img [src]="game.boxart" />
             <div class="name">{{ game.name }}</div>
         </button>
     </div>
 
-    <img class="down-arrow" src="assets/images/chevron.svg" />
+    <img *ngIf="!viewingLeaderboard" class="down-arrow" src="assets/images/chevron.svg" />
 </section>
 <section #leaderboardSection class="page">
     <app-leaderboard [game]="(selectedGame$ | async) || undefined"></app-leaderboard>

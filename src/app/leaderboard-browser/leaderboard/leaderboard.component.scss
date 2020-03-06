@@ -1,9 +1,30 @@
 h1 {
+    padding-top: 100px;
+
+    @media only screen and (max-height: 720px) {
+        padding-top: 100px * .66;
+    }
+}
+
+h1,
+h2 {
+    padding-left: 160px;
+
+    @media only screen and (max-height: 720px) {
+        padding-left: 160px * .66;
+    }
+}
+
+h1 {
     font-family: Lato;
     font-size: 60px;
     font-weight: 900;
     letter-spacing: -0.36px;
     margin: 0;
+
+    @media only screen and (max-height: 720px) {
+        font-size: 60px * .66;
+    }
 }
 
 h2 {
@@ -12,30 +33,52 @@ h2 {
     font-weight: 400;
     letter-spacing: -0.22px;
     margin: 0 0 30px 0;
+
+    @media only screen and (max-height: 720px) {
+        font-size: 36px * .66;
+        margin: 0 0 30px 8 .66 0;
+    }
 }
 
 table {
     width: 100%;
     border-spacing: 0;
     font-family: Lato;
+    padding: 0 160px;
 
     tr {
         height: 73px;
+
+        @media only screen and (max-height: 720px) {
+            height: 73px * .66;
+        }
 
         .rank {
             padding-left: 23px;
             text-align: left;
 
+            @media only screen and (max-height: 720px) {
+                padding-left: 23px * .66;
+            }
+
             &.bold {
                 font-size: 36px;
                 line-height: 1.79;
                 letter-spacing: -0.22px;
+
+                @media only screen and (max-height: 720px) {
+                    font-size: 36px * .66;
+                }
             }
         }
 
         .date {
             padding-right: 23px;
             text-align: right;
+
+            @media only screen and (max-height: 720px) {
+                padding-right: 23px * .66;
+            }
         }
     }
 
@@ -46,6 +89,10 @@ table {
         letter-spacing: -0.18px;
         font-weight: 400;
         text-align: center;
+
+        @media only screen and (max-height: 720px) {
+            font-size: 30px * .66;
+        }
     }
 
     tbody {
@@ -60,6 +107,10 @@ table {
             font-size: 24px;
             letter-spacing: -0.14px;
             text-align: center;
+
+            @media only screen and (max-height: 720px) {
+                font-size: 24px * .66;
+            }
         }
     }
 }

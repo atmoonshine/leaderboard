@@ -53,14 +53,23 @@ export class LeaderboardBrowserComponent {
 
     @HostListener('keydown', ['$event'])
     onkeyDown(event: KeyboardEvent) {
-        if (event.key === 'ArrowUp' && this.viewingLeaderboard && this.selectedGame$.value) {
+        if (
+            (event.key === 'ArrowUp' || event.key === 'Backspace' || event.key === 'b') &&
+            this.viewingLeaderboard &&
+            this.selectedGame$.value
+        ) {
             event.stopPropagation();
             event.preventDefault();
 
-            const srcButton = (document.getElementById('game' + this.selectedGame$.value.game_id) as HTMLButtonElement);
+            const srcButton = document.getElementById('game' + this.selectedGame$.value.game_id) as HTMLButtonElement;
             srcButton.scrollIntoView({ behavior: 'smooth' });
             srcButton.focus();
             this.viewingLeaderboard = false;
-        } 
+        }
+    }
+
+    onGameFocus(game: Game, event: FocusEvent) {
+        this.selectedGame$.next(game);
+        console.log({ event });
     }
 }
