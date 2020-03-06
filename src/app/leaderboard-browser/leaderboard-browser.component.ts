@@ -1,10 +1,9 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { LeaderboardService } from '../core/leaderboard.service';
 import { tap, shareReplay } from 'rxjs/operators';
 import { trigger, transition, query, stagger, animateChild, style, animate } from '@angular/animations';
 import { Game } from '../shared/models/game';
 import { BehaviorSubject } from 'rxjs';
-import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 @Component({
     selector: 'app-leaderboard-browser',
@@ -32,6 +31,8 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
     ]
 })
 export class LeaderboardBrowserComponent {
+    viewingLeaderboard = false;
+
     @ViewChild('leaderboardSection') leaderboardSection?: ElementRef<HTMLDivElement>;
 
     leaderboard$ = this.leaderboardService.get().pipe(
@@ -47,5 +48,19 @@ export class LeaderboardBrowserComponent {
         this.selectedGame$.next(game);
 
         this.leaderboardSection?.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        this.viewingLeaderboard = true;
+    }
+
+    @HostListener('keydown', ['$event'])
+    onkeyDown(event: KeyboardEvent) {
+        if (event.key === 'ArrowUp' && this.viewingLeaderboard && this.selectedGame$.value) {
+            event.stopPropagation();
+            event.preventDefault();
+
+            const srcButton = (document.getElementById('game' + this.selectedGame$.value.game_id) as HTMLButtonElement);
+            srcButton.scrollIntoView({ behavior: 'smooth' });
+            srcButton.focus();
+            this.viewingLeaderboard = false;
+        } 
     }
 }

@@ -2,7 +2,7 @@
     <h1>LEADERBOARDS</h1>
     <h2>PICK YOUR GAME</h2>
     <div class="scroll" @list>
-        <button @items class="game" *ngFor="let game of leaderboard$ | async" (focus)="selectedGame$.next(game)" (click)="scrollToLeaderboard(game)">
+        <button @items class="game" *ngFor="let game of leaderboard$ | async" [id]="'game' + game.game_id" (focus)="selectedGame$.next(game)" (click)="scrollToLeaderboard(game)">
             <img [src]="game.boxart" height="236" width="193" />
             <div class="name">{{ game.name }}</div>
         </button>
